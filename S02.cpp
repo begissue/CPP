@@ -6,24 +6,24 @@ int main()
 {
     int x, t;
 
-    // Запросить ввод двух чисел
+    // Г‡Г ГЇГ°Г®Г±ГЁГІГј ГўГўГ®Г¤ Г¤ГўГіГµ Г·ГЁГ±ГҐГ«
     cout << "enter first number (x): ";
     cin >> x;
     cout << "enter second number (t): ";
     cin >> t;
 
-    // Проверка на деление на 0
+    // ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г¤ГҐГ«ГҐГ­ГЁГҐ Г­Г  0
     if (t == 0) {
         cout << "Division by zero is impossible!" << endl;
-        return 1; // Завершить программу с ошибкой
+        return 1; // Г‡Г ГўГҐГ°ГёГЁГІГј ГЇГ°Г®ГЈГ°Г Г¬Г¬Гі Г± Г®ГёГЁГЎГЄГ®Г©
     }
 
-    // Оператор деления
-    int division = x / t; // Деление нацело
+    // ГЋГЇГҐГ°Г ГІГ®Г° Г¤ГҐГ«ГҐГ­ГЁГї
+    int division = x / t; // Г„ГҐГ«ГҐГ­ГЁГҐ Г­Г Г¶ГҐГ«Г®
     cout << "result x / t: " << division << endl;
 
-    // Оператор остатка
-    int remainder = x % t; // Остаток от деления
+    // ГЋГЇГҐГ°Г ГІГ®Г° Г®Г±ГІГ ГІГЄГ 
+    int remainder = x % t; // ГЋГ±ГІГ ГІГ®ГЄ Г®ГІ Г¤ГҐГ«ГҐГ­ГЁГї
     if (remainder != 0) {
         cout << " remainder: " << remainder << endl;
     } else {

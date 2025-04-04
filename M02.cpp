@@ -2,22 +2,26 @@
 #include <cmath>
 using namespace std;
 
-int main()
-{
+double Area(double A, int N) {
+    if (N < 3) {
+       cerr << "Ð§Ð¸ÑÐ»Ð¾ ÑÑ‚Ð¾Ñ€Ð¾Ð½ Ð´Ð¾Ð»Ð¶Ð½Ð¾ Ð±Ñ‹Ñ‚ÑŒ 3 Ð¸Ð»Ð¸ Ð±Ð¾Ð»ÑŒÑˆÐµ." << endl;
+        return 0;
+    }
+    double S = (N * A * A) / (4 * tan(M_PI / N));
+    return S;
+}
+
+int main(){
     setlocale(0, "Russian");
     int N;
     double A;
-    cout << "Ââåäèòå äëèíó ñòîðîíû (A): ";
+    cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¤Ã«Ã¨Ã­Ã³ Ã±Ã²Ã®Ã°Ã®Ã­Ã» (A): ";
     cin >> A;
-    cout << "Ââåäèòå ÷èñëî ñòîðîí (N): ";
+    cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã® Ã±Ã²Ã®Ã°Ã®Ã­ (N): ";
     cin >> N;
-    if (N<3)
-    {
-        cout<<"Íåïðàâèëüíî ââåäåíû çíà÷åíèÿ N";
-    }
-    else
-    {
-        cout<<(N * A * A) / (4 * tan(M_PI / N));
-    }
+    
+    double S = Area(A, N);
+    cout << "ÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ = " << S << endl;
+    
     return 0;
 }
